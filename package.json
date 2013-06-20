@@ -1,0 +1,17 @@
+{
+	"name" : "pam",
+	"version" : "v1.0.0",
+	"description" : "PAM authentication",
+	"homepage" : "https://github.com/pipakin/node-pam",
+        "keywords": ["pam", "authentication", "unix"],
+	"author" : { 
+		"name" : "Philip Kin",
+		"email" : "philip@thekinfamily.com"
+	},
+	"repository" : { "type" : "git", "url" : "https://github.com/pipakin/node-pam.git" },
+	"scripts" : {
+		"preinstall" : "node-gyp configure && node-gyp build",
+		"preuninstall" : "rm -r build/*"
+	},
+	"main" : "build/Release/pam.node"
+}
