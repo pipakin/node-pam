@@ -10,7 +10,7 @@ var pam = require('pam');
 
 ...
 
-pam.auth(username, password, function(result) { 
+pam.auth('system-auth', username, password, function(result) { 
     if(result) {
         success();
     }
