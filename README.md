@@ -18,3 +18,10 @@ pam.auth('system-auth', username, password, function(result) {
         fail();
     }
 });
+```
+
+### Requirements
+
+* Linux
+* libpam
+* libpam-misc
